@@ -1,28 +1,17 @@
 /* Globla */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-.padding__section80{
-    width: 80%;
-    margin: auto;
-}
-
-.padding__section70{
-    width: 70%;
-    margin: auto;
+@font-face{
+    font-family: MBCorpo Text;
+    src: url(../font/Corporate\ A\ Light.ttf);
+    /* Có thể sửa lại font sau */
 }
 
 :root{
-    --white:white;
-    --black:black;
-    --icon:coral;
+    --main-text-color: white;
 }
-body{
-    margin:50px 0 80px;
+body, html{
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #000;
+    color: var(--main-text-color);
 }
-
 /* Globla */
