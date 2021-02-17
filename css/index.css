@@ -1,0 +1,28 @@
+/* Globla */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.padding__section80{
+    width: 80%;
+    margin: auto;
+}
+
+.padding__section70{
+    width: 70%;
+    margin: auto;
+}
+
+:root{
+    --white:white;
+    --black:black;
+    --icon:coral;
+}
+body{
+    margin:50px 0 80px;
+}
+
+/* Globla */
