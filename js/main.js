@@ -1,58 +1,31 @@
-// $(window).scroll(function() {
+(function(){
+    // Back to Top - by CodyHouse.co
+	var backTop = document.getElementsByClassName('js-cd-top')[0],
+		offset = 300, // browser window scroll (in pixels) after which the "back to top" link is shown
+		offsetOpacity = 1200, //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+		scrollDuration = 700,
+		scrolling = false;
 
-//     if ($(this).scrollTop() > 50){  
-//         $('image__top').addClass("view");
-//     }
-//     // else{
-//     //     $('#content').removeClass("content_fixed");
-//     // }
-// });
+	if( backTop ) {
+		//update back to top visibility on scrolling
+		window.addEventListener("scroll", function(event) {
+			if( !scrolling ) {
+				scrolling = true;
+				(!window.requestAnimationFrame) ? setTimeout(checkBackToTop, 250) : window.requestAnimationFrame(checkBackToTop);
+			}
+		});
 
-// function getEle(ele){
-//     return document.getElementById(ele);
-// }
+		//smooth scroll to top
+		backTop.addEventListener('click', function(event) {
+			event.preventDefault();
+			(!window.requestAnimationFrame) ? window.scrollTo(0, 0) : Util.scrollTo(0, scrollDuration);
+		});
+	}
 
-
-// window.onscroll = function(){
-//     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-//         document.getElementById("image-bottom").className="view-bottom";
-        
-//       } else {
-//         document.getElementById("image-bottom").className = "";
-//       }
-// }
-
-// function isElementInViewport(elem) {
-//     var $elem = $(elem);
-
-//     // Get the scroll position of the page.
-//     var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
-//     var viewportTop = $(scrollElem).scrollTop();
-//     var viewportBottom = viewportTop + $(window).height();
-
-//     // Get the position of the element on the page.
-//     var elemTop = Math.round( $elem.offset().top );
-//     var elemBottom = elemTop + $elem.height();
-
-//     return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
-// }
-
-// // Check if it's time to start the animation.
-// function checkAnimation() {
-//     var $elem = $('.image-bottom .view-bottom');
-
-//     // If the animation has already been started
-//     if ($elem.hasClass('.view-bottom')) return;
-
-//     if (isElementInViewport($elem)) {
-//         // Start the animation
-//         $elem.addClass('.view-bottom');
-//     }
-// }
-
-// // Capture scroll events
-// $(window).scroll(function(){
-//     checkAnimation();
-// });
-
-// 
+	function checkBackToTop() {
+		var windowTop = window.scrollY || document.documentElement.scrollTop;
+		( windowTop > offset ) ? Util.addClass(backTop, 'cd-top--is-visible') : Util.removeClass(backTop, 'cd-top--is-visible cd-top--fade-out');
+		( windowTop > offsetOpacity ) && Util.addClass(backTop, 'cd-top--fade-out');
+		scrolling = false;
+	}
+})();

@@ -381,6 +381,221 @@ header{
 
 }
 
+.footnote__top {
+    display: flex;
+    padding-bottom: 20px;
+}
+.footnote__item {
+    margin-right: 20px;
+}
+
+sup {
+    top: -0.5rem;
+}
+.footer__content a, .middle__text {
+    color: grey;
+}
+.footer__item li, .sidestrap li{
+    list-style: none;
+}
+.footer__item ul {
+    margin-left: -48px;
+
+}
+.footer1 {
+    padding-left: 60px;
+    
+}
+
+.footer2 {
+    padding-right: 60px;
+
+}
+.footer__item {
+    max-width: 25%;
+    flex: 0 0 25%;
+}
+.footer__logo {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.footnote__content {
+    margin: auto 60px;
+}
+.footer__content {
+    display: flex;
+    
+}
+
+.footer__headline {
+    margin-top: 25px;
+    font-family: MBCorpo Title,DaimlerCAC-Regular,Helvetica,Arial,sans-serif;
+    font-size: 1.5rem;
+}
+hr {
+    border: 0; 
+    background: #333;
+    height: 1px;
+    width:100%;
+    margin: 30px -10px;
+}
+.footer__middle, .footer__banner {
+    padding: 0 60px;
+    color:grey;
+}
+
+.middle__logo {
+    font-size: 30px;
+    padding: 10px 50px 100px 0;
+}
+
+.language1 {
+    padding-left: 30px;
+    border-right: 1px solid rgb(77, 198, 244);
+    color:rgb(77, 198, 244);
+}
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 150px;
+}
+.footer__bottom__right ul {
+    display: flex;
+
+}
+.footer__bottom a {
+    color: grey;}
+.footer__bottom__right li {
+    list-style: none;
+    padding: 10px;
+
+}
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
+  
+.cd-top--fade-out { 
+    opacity: .5;
+}
+
+.sidestrap__content1 {
+    height: 7%;
+    width: 65px;
+    position: fixed;
+    font-size: 20px;
+    z-index: 1;
+    top: 200px;
+    right: 0px;
+    background-color: #111;
+    color: white;
+}
+
+.sidestrap__logo {
+    font-size: 25px;
+
+}
+.sidestrap__text {
+    font-size: 15px;
+
+}
+.sidestrap ul {
+    padding: 4px 0 10px 20px;
+    
+}
+.sidestrap__item {
+    position: relative;
+}
+.sidestrap__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    height: 48px;
+    line-height:48px;
+    padding-left: 15px;
+
+}
+.sidestrap__content1:hover .sidestrap__overlay, .sidestrap__content2:hover .sidestrap__overlay, .sidestrap__content3:hover .sidestrap__overlay {
+    transform: translateX(-50%);
+    opacity: 1;
+    width: 250px;
+    background-color: #111;
+    text-align: left;
+    transition: all .5s;
+}
+.sidestrap__content1:hover .sidestrap__item, .sidestrap__content2:hover .sidestrap__item, .sidestrap__content3:hover .sidestrap__item  {
+    opacity: 0;
+}
+
+.sidestrap__content2 {
+    width: 65px;
+    height: 7%;
+    position: fixed;
+    font-size: 20px;
+    z-index: 1;
+    top: 245px;
+    right: 0px;
+    background-color: #111;
+    color: white;
+}
+.sidestrap__content3 {
+    width: 65px;
+    height: 7%;
+    position: fixed;
+    font-size: 20px;
+    z-index: 1;
+    top: 290px;
+    right: 0px;
+    background-color: #111;
+    color: white;
+}
+.sidestrap__overlay i {
+    padding: 0 5px;
+}
+.sidestrap__share:hover i {
+    color:rgb(77, 198, 244);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width:768px) and (max-width:1280px){
     .col-md-6 {
         flex: 0 0 50%;
