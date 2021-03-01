@@ -21,7 +21,237 @@ body, html{
 
 /* Globla */
 
+/* HEADER  */
+header{
+    background-color:black;
+}
+.head{
+    position: fixed;
+    z-index: 999999999999999999999999999999;
+    background-color:black;
+}
+/* HEADER__BRAND LOGO  */
+.brand__logo .header__brand{
+    padding:20px 0 20px 10px; 
+}
+.brand__logo .header__logo{
+    padding:50px 0 20px 60px; 
+}
+/* HEADER DETAIL  */
+.header__detail{
+    padding-top:5px;
+}
+.header__detail .provider{
+    cursor: pointer;
+}
+.header__detail .provider .fa{
+    font-size:9px;
+    border:2px solid white;
+    padding:2px 3.3px 2.5px 3px;
+    vertical-align:text-top;
+    margin-right:5px;
+}
+.header__detail .provider span{
+    letter-spacing: 0.5px;
+    margin-right:35px;
+}
+.header__detail .Deutsch{
+    margin-right:10px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    cursor: pointer;
+    color:white;
+}
+.header__detail .provider span:hover{
+    color:#00adef;
+}
+.header__detail .provider .fa:hover{
+    border:2px solid #00adef;
+    color:#00adef;
+}
+.header__detail .Deutsch:hover{
+    color:#00adef;
+}
+/* HEADER NAVBAR */
 
+.collapse .my__navbar .nav-item .nav-link{
+    color:white;
+    margin:0 10px;
+    letter-spacing: 0.8px;
+    padding:33px 8px 0 8px;
+}
+.collapse .my__navbar .nav-item .final{
+    margin-right:0;
+    /* padding-right:0; */
+}
+/* END HEADER  */
+/* CAROUSEL  */
+.carousel .carousel-item{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.carousel-inner .img__1{
+    background-image: url(../img/carousel-1.webp);
+}
+.carousel-inner .img__2{
+    background-image: url(../img/carousel-2.jpeg);
+}
+.carousel-inner .img__3{
+    background-image: url(../img/carousel-3.webp);
+}
+.carousel-inner .img__4{
+    background-image: url(../img/carousel-4.webp);
+}
+.carousel-inner .img__5{
+    background-image: url(../img/carousel-5.webp);
+}
+.carousel-inner .img__6{
+    background-image: url(../img/carousel-6.webp);
+}
+
+/* CAROUSEL BUTTON  */
+.carousel
+/* CAROUSEL__DETAIL */
+.carousel__detail{
+    position: relative;
+}
+.carousel__detail .carousel-item .overlay__1{
+    position: absolute;
+    top:0;
+    left:8%;
+    margin:60px auto 0;
+    padding:0 15px;
+}
+.carousel__detail .carousel-item .overlay__2{
+    position: absolute;
+    bottom:0;
+    left:8.5%;
+    margin-bottom:15px;
+    color:white;
+    font-size:14px;
+}
+.carousel__detail .carousel-item h1{
+    font-size: 40px;
+    line-height: 4.28571rem;
+    color:#fff;
+    width:45%;
+    font-weight: 500;
+}
+/* CAROUSEL BUTTON  */
+.carousel-item .overlay__1 a{
+    border: 1px solid #333;
+    border-radius: 0;
+    padding:7px 20px 6px;
+    color:#ddd;
+    margin-top:8px;
+}
+/* END CAROUSEL  */
+/* SEARCH  */
+.search{
+    background-color:#333;
+}
+.search input{
+    width:calc(100% - 15rem);
+    border:1px solid #ececec;
+    color:#333;
+    font-size:1.285rem;
+    margin:0 120px;
+}
+/* END SEARCH  */
+
+/* WELCOME  */
+.welcome{
+    padding:50px 0; 
+    background-color: black;
+}
+.welcome__container{
+    padding:60px 15px;
+    margin:0 119.6px;
+}
+.welcome__items p{
+    font-size:14px;
+    margin:14px 0;
+    text-align: left;
+}
+.welcome__items .para__link{
+    color:#0088c6;
+    cursor:pointer;
+}
+.welcome__items .welcome__button{
+    color:white;
+    border:1px solid #00adef;
+    padding:10px;
+    background-color:#00adef;
+    text-decoration: none;
+    cursor:pointer;
+    margin-top:20px;
+}
+.welcome__items .welcome__button:hover{
+    background-color:#0088c6;
+    border:1px solid #0088c6;
+}
+/* END WELCOME */
+
+/* BRAND GRID  */
+.brand__grid{
+    padding-right: 50px;
+    background-color: black;
+}
+.brand__items{
+    width:299px;
+    margin:0 9px;
+    cursor: pointer;
+    position:relative
+}
+.brand__items img{
+    width:299px;
+    height:130px;
+    height:auto;
+}
+
+.brand__grid .brand__items:after{
+    position: absolute;
+    content: '';
+    width:100%;
+    height:10px;
+    background-color:#00ADEF;
+    transition:all 0.1s;
+    bottom:0;
+    left:0;
+    opacity:0;
+}
+.brand__grid .brand__items:hover:after{
+    opacity:1;
+}
+/* END BRAND__GRID  */
+
+/* test  */
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
+} */
 
 
 /* image */
