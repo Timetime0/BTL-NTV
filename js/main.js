@@ -29,3 +29,17 @@
 		scrolling = false;
 	}
 })();
+
+document.querySelector('#scroll-to-sreachbar').addEventListener('click', function(e) {
+	e.preventDefault();
+	document.querySelector('#sreach-bar').scrollIntoView({ behavior: 'smooth' });
+
+  });
+
+
+
+  document.querySelector('#sreach-to2').addEventListener('click', function(e) {
+	e.preventDefault();
+	document.querySelector('#sreach-bar').scrollIntoView({ behavior: 'smooth' });
+
+  });
