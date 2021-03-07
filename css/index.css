@@ -31,12 +31,27 @@ header{
     background-color:black;
 }
 /* HEADER__BRAND LOGO  */
-.brand__logo .header__brand{
-    padding:20px 0px 10px 30px; 
+@media (max-width:1024px){
+    .brand__logo .header__brand{
+        width:19%;
+        margin:15px 0px 0px 20px;
+    }
+    .brand__logo{
+        padding: 0px 0px 10px 30px;
+    }
+    .brand__logo .header__logo{
+        padding:43px 0 20px 30px; 
+    }
 }
-.brand__logo .header__logo{
-    padding:50px 0 20px 30px; 
+@media (min-width:1025px){
+    .brand__logo .header__brand{
+        padding:20px 0px 10px 30px; 
+    }
+    .brand__logo .header__logo{
+        padding:50px 0 20px 30px; 
+    }
 }
+
 /* HEADER DETAIL  */
 .header__detail{
     padding-top:5px;
@@ -461,6 +476,38 @@ header{
     color:#ddd;
     margin-top:8px;
 }
+@media(min-width:480px){
+    .carousel__detail .carousel-item h1{
+        margin:0px;
+        font-size: 20px;
+        line-height: 2.28571rem;
+    }
+    .overlay__1{
+        margin-top:20px;
+    }
+}
+@media(min-width:768px){
+    .carousel__detail .carousel-item h1{
+        font-size: 20px;
+        line-height: 2.28571rem;
+    }
+}
+@media(min-width:1024px){
+    .carousel__detail .carousel-item h1{
+        font-size: 30px;
+        line-height: 3.28571rem;
+    }
+}
+@media(min-width:1280px){
+    .carousel__detail .carousel-item h1{
+        font-size: 40px;
+        line-height: 4.28571rem;
+    }
+}
+
+
+
+
 /* END CAROUSEL  */
 /* SEARCH  */
 .container__search{
@@ -498,6 +545,20 @@ header{
 .search__button:focus {
     border: none;
 }
+/* @media(min-width:480px){
+    .input-group{
+        padding-right: 0px!important;
+    }
+} */
+
+
+
+
+
+
+
+
+
 .navbar-toggler{
     position: absolute;
     color: white !important;
